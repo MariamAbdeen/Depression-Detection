@@ -1,0 +1,75 @@
+<section id="Quiz">
+
+     <div class="txtimg">
+
+        <img src="../../../assets/txt10.jpg" alt="txt" class="w-100">
+         <div class="for p-4 fw-bold w-100 ">
+            <h1 class="pb-3 text-center">DepressionTest using Text</h1>
+        <p class="txtt">This Test is for people who are worried they might be suffering from the symptoms of depression or are concerned that a loved-one might be depressed.</p>
+
+    </div>
+     </div>
+
+
+    <div class="content my-5 mx-4 d-flex flex-column justify-content-center align-items-center   ">
+      <div class="result mb-3 ">
+        <h4>This Test helps you to find your mental health whether you are Depressed or NotDepressed</h4>
+   
+
+    </div>
+    <div class="txt text-start mt-3">
+      <form   id="testtxt" (ngSubmit)="txt(txtForm)"[formGroup]="txtForm">
+      <label class=" fw-bold fa-2x">List your feelings</label><br><br>
+      <textarea placeholder=" What do you feel?" class="w-100 text-center pt-3 " name="mood_pred"></textarea>
+      <div class="form-group">
+         <button [disabled]="txtForm.invalid" class="btn d-block m-auto border-none border-0 mb-1  fw-bold  btn-xl  text-center" id="check" type="submit">
+             <i *ngIf="isLoading" class="fas fa-spinner fa-spin"></i>
+             <span *ngIf="!isLoading"> Emotion Check </span></button>
+     </div>
+      </form>
+   </div>
+  
+  <!-- <button  [disabled]="txtForm.invalid"  class="btn d-block ms-auto  border-none border-0   btn-xl pd-5  "  id="check" type="submit">Emotion Check</button> -->
+   <!-- <h3>{{ pred }}<h3> -->
+      <!-- <div class="txt text-start w-75">
+
+        <label class="p-2 fw-bolder fa-2x">List your feelings</label><br><br>
+        <textarea placeholder=" What do you feel?" class="w-100 text-center pt-3 "></textarea>
+        <button class="btn d-block ms-auto  border-none border-0   btn-xl pd-5 " id="check" type="submit">Emotion Check</button>
+       </div> -->
+
+
+
+    </div>
+
+
+
+
+</section>
+     <!-- <div class="content me-5 mx-2 position-relative">
+
+        <label class="p-2 fw-bold">List your feelings</label><br><br>
+        <textarea placeholder=" What do you feel?" class="w-75 me-5 b"></textarea>
+        <button class="btn d-block me-auto  border-none border-0   btn-xl pd-5 " id="check" type="submit">Emotion Check</button>
+        <div class="result mb-3 ">
+            <h6>Test helps you to find your mental health</h6>
+            <h6>Result:</h6>
+            <ul>
+            <li>If you are Depressed,It Will Show you 1</li>
+            <li>If you are Not Depressed,It Will Show you 0</li>
+        </ul>
+        </div>
+
+    </div> -->
+        <!-- <div class="counter ">
+        <div class="layer   ">
+           <div class="container overflow-hidden">
+          <div class="text-dark ">
+            <h2>DEPRESSION TEST</h2>
+          </div>
+           </div>
+        </div>
+     </div> -->
+     <!-- <div class="for p-5 fw-bold w-100">
+        <p>This depression test is for people who are worried they might be suffering from the symptoms of depression or are concerned that a loved-one might be depressed.</p>
+     </div> -->

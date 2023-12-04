@@ -1,0 +1,39 @@
+a{
+    color:black;
+}
+.quizz{
+  background-color:rgba(144, 134, 194);
+  color: white;
+
+}
+.hotline img{width: 200%;}
+@media only screen and (max-width: 767px){
+  *{
+      margin-right:0px ;
+      padding-right: 0px;
+      margin-left:0px ;
+      padding-left: 0px;
+      font-size: medium;
+  
+  }
+
+
+  [class*="col-"] {
+     width: 100%;
+   }
+  .imgcol {width:25%;}
+  .imgcol img{width:50%;}
+   .quiz{
+    width:100%;
+   }
+   .test{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+   }
+   .quizz{
+    margin-bottom: 5px;
+    text-align: center;
+   }
+}

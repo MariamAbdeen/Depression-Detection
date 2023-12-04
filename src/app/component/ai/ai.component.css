@@ -1,0 +1,23 @@
+ol li{
+
+  /* color:#9086c2; */
+  font-size: larger;
+  font-weight: bolder;
+}
+@media only screen and (max-width: 767px){
+  *{
+      margin-right:0px ;
+      padding-right: 0px;
+      margin-left:0px ;
+      padding-left: 0px;
+      font-size: medium;
+      width: 100%;
+  }
+  .main{
+     width: 100%;
+  }
+
+  [class*="col-"] {
+     width: 100%;
+   }
+}

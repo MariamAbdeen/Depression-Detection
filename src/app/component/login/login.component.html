@@ -1,0 +1,156 @@
+
+<section id="Login"  class="p-5">
+    <div class="layer  ">
+        <div class="contain  d-flex justify-content-between align-items-center m-auto  shadow-lg w-75 ">
+            <div class="imgg w-50 p-0 ">
+                <img src="../../../assets/log.jpeg" alt="blue" >
+            </div>
+
+                <div class="containerr w-50 p-5">
+                    <h2 class=" text-center text-uppercase   mb-3">welcome Back</h2>
+                    <div *ngIf="apiError" class="alert alert-danger">
+                        {{apiError}}
+                    </div>
+                    <div class="row">
+                        <div >
+                            <form id="contactForm" (ngSubmit)="Login(LoginForm)"[formGroup]="LoginForm" >
+                                <div class="control-group">
+                                    <div class="form-group floating-label-form-group controls mb-0 pb-2">
+
+                                        <input class="form-control  my-2" id="email" type="email" formControlName="email"placeholder="Email Address" />
+                                        <div *ngIf="LoginForm.get('email')?.errors && LoginForm.get('email')?.touched" class="alert alert-danger mt-2">
+                                            <p *ngIf="LoginForm.get('email')?.getError('required')" class="m-0">Email is Required</p>
+                                            <p *ngIf="LoginForm.get('email')?.getError('email')" class="m-0">Email is invalid</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="control-group mb-0">
+                                    <div class="form-group floating-label-form-group controls mb-0 pb-2">
+
+                                         <input class="form-control" id="password" type="password" formControlName="password"placeholder=" Password"  />
+                                         <div *ngIf="LoginForm.get('password')?.errors && LoginForm.get('password')?.touched " class="alert alert-danger m-2">
+                                            <p *ngIf="LoginForm.get('password')?.getError('required')" class="m-0">Password is Required</p>
+                                            <p *ngIf="LoginForm.get('password')?.getError('pattern')" class="m-0">The password is wrong</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                                <br />
+                               
+                                <div class="form-group mb-3">
+                                    <button [disabled]="LoginForm.invalid" type="submit" class="btn d-block m-auto w-100 border-none border-0  text-light btn-xl pd-5"  id="sendMessageButton" type="submit"  routerLink="/home">
+                                        <i *ngIf="isLoading" class="fas fa-spinner fa-spin"></i>
+                                        <span *ngIf="!isLoading">Login</span>
+                                    </button>
+                                    
+                                </div>
+                                <p class="text-center">Don't have an account? <a id="account" routerLink="/signUp" class="fw-bolder">Sign Up</a></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+        </div>
+    </div>
+</section>
+<div id="slog" >
+
+    
+    <div class="containerr p-5 shadow">
+        <h2 class=" text-center text-uppercase   mb-3">welcome Back</h2>
+        <div *ngIf="apiError" class="alert alert-danger">
+            {{apiError}}
+        </div>
+        <div class="row">
+            <div >
+                <form id="contactForm" (ngSubmit)="Login(LoginForm)"[formGroup]="LoginForm" >
+                    <div class="control-group">
+                        <div class="form-group floating-label-form-group controls mb-0 pb-2">
+
+                            <input class="form-control  my-2" id="email" type="email" formControlName="email"placeholder="Email Address" />
+                            <div *ngIf="LoginForm.get('email')?.errors && LoginForm.get('email')?.touched" class="alert alert-danger mt-2">
+                                <p *ngIf="LoginForm.get('email')?.getError('required')" class="m-0">Email is Required</p>
+                                <p *ngIf="LoginForm.get('email')?.getError('email')" class="m-0">Email is invalid</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="control-group mb-0">
+                        <div class="form-group floating-label-form-group controls mb-0 pb-2">
+
+                             <input class="form-control" id="password" type="password" formControlName="password"placeholder=" Password"  />
+                             <div *ngIf="LoginForm.get('password')?.errors && LoginForm.get('password')?.touched " class="alert alert-danger m-2">
+                                <p *ngIf="LoginForm.get('password')?.getError('required')" class="m-0">Password is Required</p>
+                                <p *ngIf="LoginForm.get('password')?.getError('pattern')" class="m-0">The password is wrong</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <br />
+                   
+                    <div class="form-group mb-3">
+                        <button [disabled]="LoginForm.invalid" type="submit" class="btn d-block m-auto w-100 border-none border-0  text-light btn-xl pd-5"  id="sendMessageButton" type="submit"  routerLink="/home">
+                            <i *ngIf="isLoading" class="fas fa-spinner fa-spin"></i>
+                            <span *ngIf="!isLoading">Login</span>
+                        </button>
+                        
+                    </div>
+                    <p class="text-center">Don't have an account? <a id="account" routerLink="/signUp" class="fw-bolder">Sign Up</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- <section id="Login"  class=" p-0">
+    <div class="layer p-5 bg-black bg-opacity-10 ">
+        <div class="contain justify-content-center align-items-center m-auto  p-2 ">
+
+            <div id="contact" >
+                <div class="imgg w-50 ">
+                    <img src="../../../assets/passs.jpg" alt="blue" >
+                </div>
+                <div class="containerr w-50 pe-5">
+                    <h2 class=" text-center text-uppercase s-color p-5 mb-0">welcome Back</h2>
+                    <div *ngIf="apiError" class="alert alert-danger">
+                        {{apiError}}
+                    </div>
+                    <div class="row">
+                        <div >
+                            <form id="contactForm" (ngSubmit)="Login()"[formGroup]="LoginForm" >
+                                <div class="control-group">
+                                    <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                        <label>Email Address</label>
+                                        <input class="form-control" id="email" type="email" formControlName="email"placeholder="Email Address" />
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <div class="form-group floating-label-form-group controls mb-0 pb-2">
+
+                                         <input class="form-control" id="password" type="password" formControlName="password"placeholder=" Password"  />
+
+                                    </div>
+                                </div>
+
+
+                                <br />
+
+                                <div class="form-group">
+                                    <button class="btn d-block ms-auto border-none border-0  text-light btn-xl pd-5" id="sendMessageButton" type="submit">Log in</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+     </div>
+
+
+
+    </section>
+     -->

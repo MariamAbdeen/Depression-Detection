@@ -1,0 +1,39 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+nav{
+    background-color:transparent ;
+    padding: 5px;
+    margin: 10px;
+   
+}
+.activee{
+    color: white;
+    border-radius: 20px;
+    background-color:  #9086c2;
+}
+a{
+
+    margin-right: 10px;
+  
+    color:#9086c2;
+    font-weight: bolder;
+    text-decoration: none;
+
+}
+.nav-link a:hover{
+color: white;
+border-radius: 20px;
+background-color:  #9086c2;
+}
+.nav-item{
+    font-weight: bold;   
+}
+.nav-link{
+    color:   #9086c2;
+}
+
+
+

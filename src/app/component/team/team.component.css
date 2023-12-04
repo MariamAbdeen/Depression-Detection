@@ -1,0 +1,61 @@
+#Aboutus {
+    background: url("../../../assets/t3.jpeg") center no-repeat;
+    background-size: cover;
+ }
+#Aboutus{
+    background-color: #ffffff;
+  position:relative;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+nav{
+    background-color:transparent ;
+    padding: 40px;
+    margin: 0px;
+  
+}
+.activee{
+    color: white;
+    border-radius: 20px;
+    background-color:  rgb(144, 134, 194);
+}
+a{
+
+    margin-right: 10px;
+  
+    color:#9086c2;
+    font-weight: bolder;
+    /* padding: 5px; */
+}
+.nav-link a:hover{
+
+color: white;
+
+border-radius: 20px;
+background-color:  #9086c2;
+
+}
+.nav-item{
+    font-weight: bold;   
+}
+.nav-link ,.navbar-brand {
+    color:   white;
+    
+  
+}
+.us ,.do {width: 50%;}
+@media only screen and (max-width: 767px){
+ 
+      .us, .do {width: 100%; 
+   }
+      .container{
+        display: flex;
+        flex-direction: column;
+      }
+     
+}
+
+

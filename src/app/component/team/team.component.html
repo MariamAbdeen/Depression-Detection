@@ -1,0 +1,94 @@
+<section id="Aboutus" >
+  <div class="layer bg-black bg-opacity-50">
+    <nav  id="navbar-example" class="navbar navbar-expand-lg py-3" data-bs-theme="dark">
+      <div class="container-fluid">
+         <a class="navbar-brand ps-2 text-uppercase" >Depression Detection</a>
+         <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+         >
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-semibold text-uppercase">
+               
+
+              <ul class="navbar-nav me-auto mb-2 me-5 pe-5 mb-lg-0">
+                <li class="nav-item ">
+                  <a class="nav-link   p-1" routerLink="/home" routerLinkActive='activee text-light' >Home</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link   p-1" routerLink="/Depression" routerLinkActive='activee text-light' >Detection</a>
+                </li>
+              
+              
+        
+              
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle p-1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Test
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item py-1 m-auto text-center" href="http://127.0.0.1:5000" routerLinkActive='activee text-light'>TXT</a></li>
+                    <li><a class="dropdown-item py-1 m-auto text-center" routerLink="/imgtest" routerLinkActive='activee text-light'>Img</a></li>
+                   
+                  </ul>
+                  <li class="nav-item ">
+                    <a class="nav-link   p-1" routerLink="/Aboutus" routerLinkActive='activee text-light' >About Us</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link   p-1" routerLink="//Login" routerLinkActive='activee text-light'>Logout</a>
+                  </li>
+          
+                </ul>
+              
+
+            </ul>
+         </div>
+      </div>
+   </nav>
+
+  
+   
+
+ 
+        <div class="container d-flex justify-content-between align-items-start pt-5 mt-5 text-start m-auto">
+           <div class="text-light  us">
+              <h2 class="s-color" >About Our System</h2>
+              <br><br>
+              <p class="fw-bolder mb-4  ms-3">In recent years, There has been increasing interest in using technology to detect depression, including analysis of text and facial expressions. 
+                This system provides an overview of the latest advances in detecting depression using these methods.</p>
+      
+           </div>
+           <div class=" do"  >
+            <h2 class="s-color">What We Do</h2>
+            <br>
+            <div class="row  g-5 my-5 ">
+              <div class="col-3"><img src="../../../assets/ir-removebg-preview.png" alt="b1" class="w-100 rounded imgcol" routerLink="/imgtest"></div>
+              <div class="col-9 m-auto"><a routerLink="/imgtest" ><h4 class="s-color">Face recognition model</h4>
+                <p class="text-light">It allows you to upload your image and analyze it to detect your emotions</p></a>
+            
+              </div>
+              <div class="col-3"><img src="../../../assets/tA-removebg-preview.png" alt="b1" class="change w-100 rounded imgcol"  routerLink="/txttest"></div>
+              <div class="col-9 m-auto"><a routerLink="/txttest" ><h4 class="s-color">Detection using Text  </h4>
+                <p class="text-light">It allows you to Write your feelings and analyze them to know you depressed or Not</p></a>
+            
+              </div>
+              <div class="col-3"><img src="../../../assets/qu-removebg-preview.png" alt="b1" class="w-100 rounded imgcol" routerLink="/Depression"></div>
+              <div class="col-9 m-auto"><a routerLink="/Depression" ><h4 class="s-color">Information about depression </h4>
+                <p class="text-light">It answers all your questions about depression</p></a>
+            
+              </div>
+            </div>
+          
+                
+           </div>
+        </div>
+     </div>
+
+</section>

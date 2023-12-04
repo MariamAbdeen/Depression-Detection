@@ -1,0 +1,56 @@
+<section id="Questions">
+
+  <div class="info p-3 m-auto my-5 shadow">
+    <h2 class="test p-3 m-2 text-center">Face recognition to detect emotions</h2>
+    <h5 class="text-center mb-3 ">What gets measured gets improved</h5>
+    <h6 class="text-center mb-3 ">Tracking your well-being data will help you take timely action and prevent burnout</h6>
+    <h6 class="text-center mb-3 ">We've developed a technology to help you detect emotions, and determine mental risks issues</h6>
+  </div>
+    <div class="imgtest ">
+        <div class="layer  ">
+            <div class="contain d-flex w-100 justify-content-center align-items-center m-auto">
+
+              <div class="uploadd  p-5 ">
+                <div class="txt  fw-bold  ">
+
+                  <p> put your image to detect your emotions</p>
+                </div>
+                <div class="text-center  fw-bold ">
+
+                  <input class="form-control rounded-4" type="file" placeholder="tt"
+                      (change)="onChange($event)">
+  <p class="m-3">Your photo will only be used for detect emotions and will not be shared with third parties</p>
+                  <button (click)="onUpload()"  id="sendimg" class="btn d-block ms-auto  border-none border-0   btn-xl pd-5 m-3">
+                    Emotion Check
+                  </button>
+                </div>
+
+                <!-- Shareable short link of uploaded file -->
+                <div class="container text-center jumbotron bg-info"
+                  *ngIf="shortLink">
+                  <h2> Visit Here</h2>
+                  <a href="{{shortLink}}">{{shortLink}}</a>
+                </div>
+
+             
+              </div>
+
+
+
+
+                <div class="imgg  ">
+                  <img src="../../../assets/imgtest.jpg" alt="blue" class="w-100" >
+              </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="upload ps-5"><p>Click on the "Choose File" button to upload Your Image:</p>
+
+      <form action="/action_page.php">
+        <input type="file" title="Your Image" id="myFile" name="filename" placeholder="upload Your Image"class="mt-2 border-none border-0  p-2 "><br>
+        <input type="submit"class="mt-2 border-none border-0 bg-light p-2 ">
+      </form></div> -->
+
+</section>

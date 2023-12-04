@@ -1,0 +1,131 @@
+
+ #counter {
+    background: url("../../../assets/d10.jpg") top no-repeat;
+    background-size: cover;
+ 
+
+ }
+
+ #counter .layer {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: rgba(141, 121, 133,.5);
+ }
+ .contain {
+   position: relative;
+   text-align: center;
+   color: white;
+ }
+ .centered {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+ }
+.imgedit{
+   border-radius: 50%;
+   filter: opacity(80%);
+   filter: grayscale(20%);
+   transition: all 0.5s;
+
+}
+.imgedit:hover{
+   filter: grayscale(0%);
+   transform: scale(1.15);
+
+}
+ #counter .layer span {
+    outline: 10px solid rgba(141, 121, 133,.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+ }
+ #content{
+/* 
+   background-color: rgb(242, 240, 240); */
+   line-height: 2;
+ }
+ #content ul {
+   --icon-size: 1.2em;
+   --gutter: .5em;
+   padding: 0 0 0 var(--icon-size);
+ }
+ #sendMessageButton{
+   background-color: rgb(140, 130, 191);
+   margin-bottom: 30px;
+   }
+
+ #content ul li {
+   padding-left: var(--gutter);
+
+
+
+ }
+
+#content ul li::marker {
+   content: "\f00c"; /* FontAwesome Unicode */
+   font-family: FontAwesome;
+   font-size: var(--icon-size);
+   color:var(--s-color);
+
+ }
+ .All{
+   position: absolute;
+   align-content: center;
+   align-items: center;
+   background-color: #fff;
+   top:20%;
+   left: 10%;
+
+ }
+ .page{  position: sticky;
+   top: 20%;}
+
+
+
+
+   @media only screen and (max-width: 767px){
+      .main{
+         width: 100%;
+      }
+
+      [class*="col-"] {
+         width: 100%;
+       }
+      
+   }
+ /* .card img {
+   filter: grayscale(100%);
+   transition: all 0.5s;
+}
+
+ .card:hover img {
+   filter: grayscale(0%);
+   transform: scale(1.2);
+} */
+
+ /* @media only screen and (max-width: 767px){
+   .contentsplit .rt-container {
+    flex-direction: column;
+}
+.cp-pb-2col-list li.hideli {
+   display: none;
+}
+.cp-pb-readmore {
+   display: block;
+}
+.cp-pb-readmore span {
+   text-decoration: underline;
+   color: #812061;
+}
+}
+
+ */
+

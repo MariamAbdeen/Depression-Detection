@@ -1,0 +1,28 @@
+#sendMessageButton{
+    background-color: rgb(140, 130, 191);
+    margin-bottom: 30px;
+    }
+    .page{  position: sticky;
+        top: 20%;} 
+
+h6 a{
+    text-decoration: none;
+    color: black;
+}        
+@media only screen and (max-width: 767px){
+    *{
+        margin-right:0px ;
+        padding-right: 0px;
+        margin-left:0px ;
+        padding-left: 0px;
+        font-size: medium;
+        width: 100%;
+    }
+    .main{
+       width: 100%;
+    }
+
+    [class*="col-"] {
+       width: 100%;
+     }
+ }

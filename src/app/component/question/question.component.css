@@ -1,0 +1,27 @@
+.imgg img{
+    width: 75%;
+  }
+  /* .contain{ background-color:rgba(140, 130, 191,.3);} */
+  #myFile{
+    color:rgba(140, 130, 191,.3);
+  }
+  #sendimg{
+    background-color: rgb(242, 240, 240);
+  }
+  .info{
+    background-color: white;
+    width: 75%;
+  }
+  .uploadd,.imgg{width: 50%;}
+  @media only screen and (max-width: 767px){
+ 
+  
+    .contain{
+      display: flex;
+      flex-direction: column;
+    }
+   .uploadd {width: 100%;}
+   .imgg{width: 75%;}
+   .info{    width: 90%;
+  }
+}
